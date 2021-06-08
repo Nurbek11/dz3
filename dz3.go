@@ -3,7 +3,7 @@ package dz3
 import (
 "unicode"
 )
-
+//package function
 func caseChanger(word string) string {
 	newWord := ""
 	//iterate the word symbols
