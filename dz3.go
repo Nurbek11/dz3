@@ -2,6 +2,7 @@ package dz3
 
 import (
 	"fmt"
+	"github.com/jakehl/goid"
 	"math"
 	"unicode"
 )
@@ -39,4 +40,9 @@ func quadraticRoot(a, b, c float64) {
 		Img := math.Sqrt(-D) / (2 * a)
 		fmt.Println("root1 = ", root1, "+", Img, ", root2 = ", root2, "-", Img)
 	}
+}
+
+func uuid() {
+	v4UUID := goid.NewV4UUID()
+	fmt.Println(v4UUID)
 }
